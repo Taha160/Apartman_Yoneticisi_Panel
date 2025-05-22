@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1122</width>
+    <height>773</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: black
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="baslik">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>40</y>
+      <width>761</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white
+</string>
+    </property>
+    <property name="title">
+     <string>Yönetim Paneli</string>
+    </property>
+    <widget class="QWidget" name="formLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>291</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="3" column="0">
+       <widget class="QLabel" name="lb_evsahibi">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ev Sahibi Adı :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Aidat :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Kat:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="lb_daire">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Daire No :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Borç :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lne_kat"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lne_daire"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lne_evsahibi"/>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lne_aidat"/>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lne_borc"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>40</y>
+       <width>160</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pb_kayitekle">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border: 2px solid #A3BE8C;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font: bold 12pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover {
+    background-color: #D8F5D1;  /* Hafif yeşil */
+    color: black;
+    border: 2px solid #8FBC8F;
+}
+
+QPushButton:pressed {
+    background-color: #A3BE8C;  /* Daha doygun yeşil */
+    border: 2px solid #7BA87E;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Kayıt Ekle</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pb_kayitlistele">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border: 2px solid #A3BE8C;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font: bold 12pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover {
+    background-color: #D8F5D1;  /* Hafif yeşil */
+    color: black;
+    border: 2px solid #8FBC8F;
+}
+
+QPushButton:pressed {
+    background-color: #A3BE8C;  /* Daha doygun yeşil */
+    border: 2px solid #7BA87E;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Kayıtları Listele</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pb_kayitsil">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border: 2px solid #A3BE8C;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font: bold 12pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover {
+    background-color: #D8F5D1;  /* Hafif yeşil */
+    color: black;
+    border: 2px solid #8FBC8F;
+}
+
+QPushButton:pressed {
+    background-color: #A3BE8C;  /* Daha doygun yeşil */
+    border: 2px solid #7BA87E;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Kayıt Sil</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLineEdit" name="lne_sorgu">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>50</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_sorgu">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>50</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border: 2px solid #A3BE8C;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font: bold 12pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover {
+    background-color: #D8F5D1;  /* Hafif yeşil */
+    color: black;
+    border: 2px solid #8FBC8F;
+}
+
+QPushButton:pressed {
+    background-color: #A3BE8C;  /* Daha doygun yeşil */
+    border: 2px solid #7BA87E;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Sorgula</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>300</y>
+      <width>761</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white
+</string>
+    </property>
+    <property name="title">
+     <string>Kayıtlar</string>
+    </property>
+    <widget class="QTableWidget" name="table_daireler">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>731</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white</string>
+     </property>
+     <property name="rowCount">
+      <number>0</number>
+     </property>
+     <property name="columnCount">
+      <number>5</number>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1122</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
